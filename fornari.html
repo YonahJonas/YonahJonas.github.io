@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Opções para o Sábado aniversário do Fornari</title>
+    <style>
+      body {
+        font-size: 18px;
+        text-align: center;
+      }
+      button {
+        margin: 20px;
+        padding: 10px 20px;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Opções para o Sábado aniversário do Fornari</h1>
+    <button id="casa-btn" onclick="teleportCasa()">Casa</button>
+    <button id="cachorrada-btn" onclick="abrirLink()">Cachorrada</button>
+
+    <script>
+      function teleportCasa() {
+        var x = Math.floor(Math.random() * window.innerWidth);
+        var y = Math.floor(Math.random() * window.innerHeight);
+        document.getElementById("casa-btn").style.position = "absolute";
+        document.getElementById("casa-btn").style.left = x + "px";
+        document.getElementById("casa-btn").style.top = y + "px";
+      }
+
+      function abrirLink() {
+        window.open("https://youtu.be/xv6yW8PuvJw?t=3");
+      }
+    </script>
+  </body>
+</html>
